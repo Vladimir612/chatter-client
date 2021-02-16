@@ -1,0 +1,75 @@
+.modal-container
+  position: fixed
+  background: #cfcfcf
+  left: 50%
+  top: 20px
+  transform: translateX(-50%)
+  width: 90%
+  padding: 5px
+  border-radius: 1rem
+@media screen and ( min-width: 375px )
+  .modal-container
+    width: 60%
+
+@media screen and ( min-width: 550px )
+  .modal-container
+    width: 50%
+
+@media screen and ( min-width: 740px )
+  .modal-container
+    width: 20rem
+
+body.modal-open *
+  pointer-events: none
+
+body.modal-open .modal-container *
+  pointer-events: all
+
+.close-modal
+  cursor: pointer
+  position: absolute
+  right: 1rem
+  top: 0
+  font-size: 1.5rem
+
+.submit-modal
+  background: rgb(0, 191, 165)
+  color: rgb(10, 31, 52)
+  margin: 1rem
+
+.modal-form-container
+  margin-top: 1rem
+  display: flex
+  align-items: center
+  justify-content: center
+  form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.modal-form-group
+  margin-bottom: 15px
+  display: flex
+  flex-direction: column
+  label
+    margin-bottom: .5rem
+
+//conversations
+
+.conversations-form
+  width: 80%
+  display: grid!important
+  grid-template-columns: 1fr 1fr
+
+.conversation-submit
+  grid-column-start: 1
+  grid-column-end: 3
+
+.conversations-form-group
+  margin: .7rem
+
+.form-check
+  padding: 5px
+  &-input
+    margin-right: 5px

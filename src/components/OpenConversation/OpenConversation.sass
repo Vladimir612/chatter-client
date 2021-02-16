@@ -1,0 +1,79 @@
+.conversation-content
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+.conversation-header
+  padding: 1rem
+  padding-right: 50%
+  height: 45px
+  background: #00bfa5
+  display: flex
+  align-items: center
+  justify-content: space-between
+  h2
+    transform: translateX(50%)
+  .toggle-menu
+    cursor: pointer
+    padding: .5rem
+    border-radius: 50%
+    border: none
+    margin: 7px
+    margin-left: 0
+    outline: none
+    background-color: #133e38
+    display: flex
+    align-items: center
+    justify-content: center
+
+.conversation-send-message
+  margin: 12px
+
+.form-send-message-group
+  display: flex
+  align-items: center
+  textarea
+    font-size: 18px
+    font-family: Montserrat sans-serif
+    padding: 10px
+    border-style: none
+    border-radius: 1.2rem
+    height: 75px
+    resize: none
+    width: 100%
+    background-color: #25292b
+    box-shadow: 0 0 25px #000
+    color: #fff
+  textarea:focus, input:focus
+    outline: none
+  .btn-send-message
+    background: #30dcc5
+    border-radius: 100%
+    height: 3rem
+    width: 3rem
+    margin-left: 12px
+    display: flex
+    align-items: center
+    justify-content: center
+
+//messages-screen
+
+.conversation-messages
+  display: flex
+  width: 100%
+  overflow: auto
+  height: 100%
+  .content
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    padding: .8rem
+    .message
+      background: #133e38
+      border-radius: 1rem
+      padding: 4px 8px
+      align-self: flex-start
+      margin-bottom: .5rem
+      color: #fff
